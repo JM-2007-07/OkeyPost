@@ -5,6 +5,11 @@ import ButtonOP from '../components/ButtonOP'
 import Hero from '../components/Hero'
 import heroPhoto from '../assets/Иллюстрация.svg'
 import heroPhoto2 from '../assets/Иллюстрация (1).svg'
+import heroPhoto3 from '../assets/Иллюстрация (6).svg'
+import ill from '../assets/Иллюстрация (2).svg'
+import ill1 from '../assets/Иллюстрация (3).svg'
+import ill2 from '../assets/Иллюстрация (5).svg'
+import ill3 from '../assets/Иллюстрация (4).svg'
 import Example from '../components/Example'
 import Footer from '../components/Footer'
 
@@ -44,6 +49,77 @@ export default function Home() {
                     </Typography>
                     <Typography sx={{fontWeight:'300',fontSize:'18px','@media (max-width:400px)':{fontSize:'15px',lineHeight:'1.5',mt:'12px'}}}>
                         Такой способ покупки также подойдёт, если магазин принимает только английские карты.
+                    </Typography>
+                </Box>
+                <ButtonOP>
+                    <Typography sx={{fontSize:'17px','@media (max-width:400px)':{fontSize:'14px'}}}>
+                        Попробовать
+                    </Typography>
+                </ButtonOP>
+            </Box>
+        </Hero>
+        <Box sx={{display:'flex',width:'1400px',flexDirection:'column',gap:'20px',margin:'auto',mt:'100px',color:'#1F2428','@media (max-width:400px)':{width:'100%',mt:'55px',px:'20px',gap:'15px',boxSizing:'border-box'}}}>
+            <Typography sx={{fontSize:'44px', maxWidth:'690px',fontWeight:'800','@media (max-width:400px)':{fontSize:'30px',lineHeight:'1.15'}}}>
+                4 простых шага для ваших покупок в Великобритании 
+            </Typography>
+            <Box sx={{width:'100%', display: 'flex', justifyContent:'space-between', gap:'25px','@media (max-width:400px)':{flexDirection:'column'}}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', gap:'20px', width:'330px'}}>
+                    <img src={ill} alt="" />
+                    <Typography sx={{fontSize:'20px', fontWeight:'700', width:'172px'}}>
+                        ВЫ ВЫБИРАЕТЕ ТОВАР
+                    </Typography>
+                    <Typography sx={{fontWeight: '300'}}>
+                        в английском магазине, оплачиваете и указываете <span style={{fontWeight:'600', color:'#01CD7D'}}>адрес склада</span> OkeyPost
+                    </Typography>
+                </Box>
+                <Box sx={{display: 'flex', flexDirection: 'column', gap:'20px', width:'330px'}}>
+                    <img src={ill1} alt="" />
+                    <Typography sx={{fontSize:'20px', fontWeight:'700', width:'220px'}}>
+                        ПОКУПКИ ПРИХОДЯТ НА СКЛАД
+                    </Typography>
+                    <Typography sx={{fontWeight: '300'}}>
+                        в английском магазине, оплачиваете и указываете <span style={{fontWeight:'600', color:'#01CD7D'}}>адрес склада</span> OkeyPost
+                    </Typography>
+                </Box>
+                <Box sx={{display: 'flex', flexDirection: 'column', gap:'20px', width:'330px'}}>
+                    <img src={ill2} alt="" />
+                    <Typography sx={{fontSize:'20px', fontWeight:'700', width:'192px'}}>
+                        ОТПРАВЛЯЕМ ИХ К ВАМ ДОМОЙ
+                    </Typography>
+                    <Typography sx={{fontWeight: '300'}}>
+                        в английском магазине, оплачиваете и указываете <span style={{fontWeight:'600', color:'#01CD7D'}}>адрес склада</span> OkeyPost
+                    </Typography>
+                </Box>
+                <Box sx={{display: 'flex', flexDirection: 'column', gap:'20px', width:'330px'}}>
+                    <img src={ill3} alt="" />
+                    <Typography sx={{fontSize:'20px', fontWeight:'700', width:'192px'}}>
+                        ЗАБИРАЕТЕ СВОЮ ПОСЫЛКУ
+                    </Typography>
+                    <Typography sx={{fontWeight: '300'}}>
+                        в английском магазине, оплачиваете и указываете <span style={{fontWeight:'600', color:'#01CD7D'}}>адрес склада</span> OkeyPost
+                    </Typography>
+                </Box>
+            </Box>
+            <Typography sx={{fontWeight:'300',fontSize:'20px',width:'700px','@media (max-width:400px)':{fontSize:'16px',width:'100%',lineHeight:'1.5',mt:'15px'}}}>
+                Не хотите разбираться самостоятельно, наши мастера шопинга с радостью купят все товары за вас.
+            </Typography>
+            <ButtonOP>
+                <Typography sx={{fontSize:'17px','@media (max-width:400px)':{fontSize:'14px'}}}>
+                    Быстрая покупка
+                </Typography>
+            </ButtonOP>
+        </Box>
+        <Hero>
+            <Box sx={{'@media (max-width:400px)':{width:'100%',display:'flex',justifyContent:'center'}}}>
+                <img src={heroPhoto3} alt="" style={{maxWidth:'100%',height:'auto'}}/>
+            </Box>
+            <Box sx={{display:'flex',ml:'50px',flexDirection:'column',gap:'40px',alignItems:'start',color:'white','@media (max-width:400px)':{ml:0,gap:'25px',width:'100%'}}}>
+                <Box>
+                    <Typography sx={{fontSize:'30px',fontWeight:'700',width:'800px','@media (max-width:400px)':{fontSize:'23px',width:'100%',lineHeight:'1.3'}}}>
+                        Виртуальный тур по нашему складу в реальном времени
+                    </Typography>
+                    <Typography sx={{fontWeight:'300',fontSize:'18px','@media (max-width:400px)':{fontSize:'15px',lineHeight:'1.5',mt:'12px'}}}>
+                        Вы можете всегда посмотреть на нашу слаженую работу на складе
                     </Typography>
                 </Box>
                 <ButtonOP>

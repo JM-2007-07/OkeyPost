@@ -78,7 +78,6 @@ export default function Sales() {
 
     return (
         <>
-            <Header/>
 
             <Hero>
                 <Box sx={{display:'flex',flexDirection:'column',gap:'40px',alignItems:'start',color:'white','@media (max-width:400px)':{width:'100%',gap:'25px'}}}>
@@ -178,7 +177,6 @@ export default function Sales() {
                 </Box>
             </Hero>
 
-            <Footer/>
         </>
     )
 }

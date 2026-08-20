@@ -8,7 +8,6 @@ import { Link } from 'react-router'
 export default function NotFound() {
     return (
         <>
-            <Header/>
             <Box sx={{width:'1400px',minHeight:'calc(100vh - 100px)',margin:'auto',display:'flex',alignItems:'center',justifyContent:'space-between','@media (max-width:400px)':{width:'100%',minHeight:'calc(100vh - 80px)',padding:'40px 20px',boxSizing:'border-box',flexDirection:'column',justifyContent:'center',gap:'50px'}}}>
                 <Box sx={{display:'flex',flexDirection:'column',gap:'30px',width:'650px',color:'#1F2428','@media (max-width:400px)':{width:'100%',gap:'20px',alignItems:'flex-start'}}}>
                     <Typography sx={{fontSize:'180px',fontWeight:'800',lineHeight:'1',color:'#01CD7D','@media (max-width:400px)':{fontSize:'110px'}}}>

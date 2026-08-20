@@ -10,13 +10,16 @@ import ill from '../assets/Иллюстрация (2).svg'
 import ill1 from '../assets/Иллюстрация (3).svg'
 import ill2 from '../assets/Иллюстрация (5).svg'
 import ill3 from '../assets/Иллюстрация (4).svg'
+import icon1 from '../assets/Иконка (9).svg'
+import icon2 from '../assets/Иконка (10).svg'
+import icon3 from '../assets/Иконка (11).svg'
+
 import Example from '../components/Example'
 import Footer from '../components/Footer'
 
 export default function Home() {
   return (
     <>
-        <Header/>
         <Hero>
             <Box sx={{display:'flex',flexDirection:'column',gap:'40px',alignItems:'start',color:'white','@media (max-width:400px)':{gap:'25px',width:'100%'}}}>
                 <Box>
@@ -130,6 +133,43 @@ export default function Home() {
             </Box>
         </Hero>
         <Box sx={{display:'flex',width:'1400px',flexDirection:'column',gap:'20px',margin:'auto',mt:'100px',color:'#1F2428','@media (max-width:400px)':{width:'100%',mt:'55px',px:'20px',gap:'15px',boxSizing:'border-box'}}}>
+            <Typography sx={{fontSize:'44px',fontWeight:'800', maxWidth: '830px','@media (max-width:400px)':{fontSize:'30px',lineHeight:'1.15'}}}>
+                120 000 довольных клиентов в России уже сделали свой выбор
+            </Typography>
+            <Typography sx={{fontSize:'18px',fontWeight:'300', maxWidth: '600px', '@media (max-width:400px)':{fontSize:'15px',lineHeight:'1.6'}}}>
+                За последний год десятки тысяч наших клиентов заказали товары из Англии и оставили 19 633 отзыва
+            </Typography>
+            <Box sx={{width:'100%', display: 'flex', justifyContent:'space-between', gap:'25px','@media (max-width:400px)':{flexDirection:'column'}}}>
+                <Box sx={{maxWidth: '450px', borderRadius:'16px', boxShadow:'0px 0px 50px #8A8A8A2C', padding: '25px', display: 'flex', flexDirection: 'column', gap: '12px'}}>
+                    <img src={icon1} width={52} alt="" />
+                    <Typography sx={{fontWeight: '700', fontSize:'18px'}}>
+                        Больше не значит дороже
+                    </Typography>
+                    <Typography sx={{fontWeight:'300'}}>
+                        С ростом веса посылки цена за каждые 0.5 кг уменьшается в прогрессии.
+                    </Typography>
+                </Box>
+                <Box sx={{maxWidth: '450px', borderRadius:'16px', boxShadow:'0px 0px 50px #8A8A8A2C', padding: '25px', display: 'flex', flexDirection: 'column', gap: '12px'}}>
+                    <img src={icon2} width={52} alt="" />
+                    <Typography sx={{fontWeight: '700', fontSize:'18px'}}>
+                        Быстрая обработка посылок
+                    </Typography>
+                    <Typography sx={{fontWeight:'300'}}>
+                        Посылка обрабатывается не дольше 48 часов после поступления на склад.
+                    </Typography>
+                </Box>
+                <Box sx={{maxWidth: '450px', borderRadius:'16px', boxShadow:'0px 0px 50px #8A8A8A2C', padding: '25px', display: 'flex', flexDirection: 'column', gap: '12px'}}>
+                    <img src={icon3} width={52} alt="" />
+                    <Typography sx={{fontWeight: '700', fontSize:'18px'}}>
+                        SMS-уведомления
+                    </Typography>
+                    <Typography sx={{fontWeight:'300'}}>
+                        Отслеживайте весь процесс с помощью sms-уведомлений.
+                    </Typography>
+                </Box>
+            </Box>
+        </Box>
+        <Box sx={{display:'flex',width:'1400px',flexDirection:'column',gap:'20px',margin:'auto',mt:'100px',color:'#1F2428','@media (max-width:400px)':{width:'100%',mt:'55px',px:'20px',gap:'15px',boxSizing:'border-box'}}}>
             <Typography sx={{fontSize:'44px',fontWeight:'800','@media (max-width:400px)':{fontSize:'30px',lineHeight:'1.15'}}}>
                 Ваш личный адрес в Великобритании для покупок
             </Typography>
@@ -161,7 +201,6 @@ export default function Home() {
                 </Box>
             </Box>
         </Hero>
-        <Footer/>
     </>
   )
 }

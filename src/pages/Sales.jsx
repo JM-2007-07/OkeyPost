@@ -121,7 +121,7 @@ export default function Sales() {
                         <Box key={el.id} sx={{display:'flex',alignItems:'center',gap:'40px','@media (max-width:400px)':{flexDirection:'column',alignItems:'stretch',gap:'15px'}}}>
 
                             <Box sx={{display:'flex',justifyContent:'center','@media (max-width:400px)':{width:'100%'}}}>
-                                <img src={el.img} height={328} width={360} alt="" style={{maxWidth:'100%',height:'auto',objectFit:'cover'}}/>
+                                <img src={el.img} height={328} width={360} alt="" style={{maxWidth:'360px',height:'auto',objectFit:'cover'}}/>
                             </Box>
 
                             <Box sx={{display:'flex',height:'328px',flexDirection:'column',justifyContent:'space-evenly','@media (max-width:400px)':{height:'auto',gap:'12px'}}}>
